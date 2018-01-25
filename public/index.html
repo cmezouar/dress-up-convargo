@@ -1,114 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='UTF-8'/>
+
+<head>
+    <meta charset='UTF-8' />
     <title>CSS/HTML Workshop with Convargo</title>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="index-styles.css">
+</head>
 
-
-    
-  </head>
-  <body>
-
-    <div class= "jumbotron text-center welcome">
-      <h1 >Welcome to Convargo</h1>
-      <p class="text-primary">This platform allows the professionals to send their goods
-        in all Europe in a few clicks. Inform your needs for expedition, obtain
-        a fixed price and reach more than 2500 carriers of quality! </p>
- 
+<body>
+    <div class="jumbotron text-center welcome">
+        <h1>Welcome to Convargo</h1>
+        <p class="text-primary">This platform allows the professionals to send their goods in all Europe in a few clicks. Inform your needs for expedition,
+            obtain a fixed price and reach more than 2500 carriers of quality! </p>
     </div>
-
     <div class="container">
         <div class="row">
-          <div class="col-md-4 row" >
-            <div class="col-md-12" id="trucker">
-                <div class="input-group" id="trucker">
+            <div class="col-md-4 row" id="trucker">
+                <div class="col-md-12 input-group">
                     <span class="input-group-addon">Trucker name</span>
-                    <input id="trucker" type="text" class="form-control" >
-                  </div>
-            
-            </div>
-
-            <div class="col-md-12" id="shipper">
-              
-              <div class="input-group" id="shipper">
-                  <span class="input-group-addon">Shipper name</span>
-                  <input id="shipper" type="text" class="form-control" >
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-md-4 row">
-            <div class="col-md-12" id="trucker">
-                <div class="input-group" id="trucker">
+                    <input type="text" class="name form-control">
+                </div>
+                <div class="col-md-12 input-group">
                     <span class="input-group-addon">Price by km</span>
-                    <input id="trucker" type="number" class="form-control" >
+                    <input type="number" class="price-by-km form-control">
                 </div>
-             
-            </div>
-
-            <div class="col-md-12" id="shipper">
-                <div class="input-group" id="shipper">
-                    <span class="input-group-addon">Distance in km</span>
-                    <input id="shipper" type="number" class="form-control" >
-                </div>
-              
-            </div>
-
-            
-
-            
-          
-          </div>
-
-          <div class="col-md-4 row" >
-            <div class="col-md-12" id="trucker">
-                <div class="input-group" id="trucker">
+                <div class="col-md-12 input-group">
                     <span class="input-group-addon">Price by m3</span>
-                    <input id="trucker" type="number" class="form-control" >
+                    <input type="number" class="price-by-cubic form-control">
                 </div>
-              
             </div>
-             
-            <div class="col-md-12"id="shipper">
-                <div class="input-group" id="shipper">
+            <div class="col-md-4 row"  id="shipper">
+              	 <div class="col-md-12 input-group">
+                    <span class="input-group-addon">Shipper name</span>
+                    <input type="text" class="name form-control">
+                </div>
+                <div class="col-md-12 input-group">
+                    <span class="input-group-addon">Distance in km</span>
+                    <input id="shipper" type="number" class="distance form-control">
+                </div>
+                <div class="col-md-12 input-group">
                     <span class="input-group-addon">Volume in m3</span>
-                    <input id="shipper" type="number" class="form-control" >
-                </div>
-                <div class="input-group" id="shipper">
+                    <input type="number" class="volume form-control">
                     <span class="input-group-addon">Deductible option</span>
-                    <input id="shipper" type="checkbox" class="option" >
+                    <input type="checkbox" class="option">
                 </div>
-              
-              
             </div>
-          </div>
+            <div class="col-md-4 row">
+              <button id="compute" type="button" class="btn btn-primary btn-block">Compute</button>
+            </div>
+        </div>
+        <div id="actors" class="row">
         </div>
 
-          
-        <div class="row">
-              
-            <button id="compute" type="button" class="btn btn-primary btn-block">Compute</button>
-        </div>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+        <script src="convargo.js"></script>
+        <script src="index.js"></script>
+</body>
 
-				<div id="actors" class="row">
-        
-    </div>
-
-
-
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="convargo.js"></script>
-    <script src="index.js"></script>
-    
-  </body>
 </html>
