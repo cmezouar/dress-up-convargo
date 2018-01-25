@@ -26,12 +26,12 @@
 
     <div class="container">
         <div class="row">
-          <div class="col-md-4 row">
-            <div class="col-md-12">
+          <div class="col-md-4 row" >
+            <div class="col-md-12" id="trucker">
               <input class="name" type="text" placeholder="Trucker name"/>
             </div>
 
-            <div class="col-md-12">
+            <div class="col-md-12" id="shipper">
               <input class="name" type="text" placeholder="Shipper name"/>
 
             </div>
@@ -39,32 +39,37 @@
           </div>
 
           <div class="col-md-4 row">
-            <div class="col-md-12">
+            <div class="col-md-12" id="trucker">
               <input class="price-by-km" type="number" placeholder="Price by km"/>
             </div>
 
-            <div class="col-md-12">
+            <div class="col-md-12" id="shipper">
               <input class="distance" type="number" placeholder="Distance in km"/>
             </div>
 
-            <div class="col-md-12">
-              <button id="compute">Compute</button>
-              <div id="actors"></div>  
-            </div>
+            
 
             
           
           </div>
 
           <div class="col-md-4 row" >
-            <div class="col-md-12">
+            <div class="col-md-12" id="trucker">
               <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
             </div>
              
-            <div class="col-md-12">
+            <div class="col-md-12"id="shipper">
               <input class="volume" type="number" placeholder="Volume in m3"/>
               <input class="option" type="checkbox" placeholder="Deductible option"/>
             </div>
+          </div>
+
+          
+          <div class="row">
+              <button id="compute">Compute</button>
+          </div>
+          
+					<div id="actors" class="row">
           </div>
     </div>
 
