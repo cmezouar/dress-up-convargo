@@ -1,3 +1,4 @@
+
 /* global CONVARGO*/
 'use strict';
 
@@ -7,12 +8,10 @@
     const div = document.createElement('div');
     const template = actors.map(actor => {
       return `
-            <div class="panel panel-success col-md-2">
-            	<div class="panel-heading">${actor.who}</div>
-              <div class="panel-body">
-              	 <h1>${actor.type}</h1>
-                 <h2> ${actor.amount} </h2>
-              </div>
+          <div class="col-md-2">
+            <span class="label label-default">${actor.who}</span>
+            <span class="label label-info ">${actor.type}</span>
+            <span class="label label-primary">${actor.amount}</span>
     	   </div>
       `;
     }).join('');
