@@ -17,34 +17,49 @@
   <body>
 
     <div class= "jumbotron text-center">
-      <h1>Welcome to Convargo</h1>
-      <p>This platform allows the professionals to send their goods
+      <h1 >Welcome to Convargo</h1>
+      <p class="text-primary">This platform allows the professionals to send their goods
         in all Europe in a few clicks. Inform your needs for expedition, obtain
         a fixed price and reach more than 2500 carriers of quality! </p>
-
+ 
     </div>
 
     <div class="container">
         <div class="row">
           <div class="col-md-4 row" >
             <div class="col-md-12" id="trucker">
-              <input class="name" type="text" placeholder="Trucker name"/>
+                <div class="input-group" id="trucker">
+                    <span class="input-group-addon">Trucker name</span>
+                    <input id="trucker" type="text" class="form-control" >
+                  </div>
+            
             </div>
 
             <div class="col-md-12" id="shipper">
-              <input class="name" type="text" placeholder="Shipper name"/>
-
+              
+              <div class="input-group" id="shipper">
+                  <span class="input-group-addon">Shipper name</span>
+                  <input id="shipper" type="text" class="form-control" >
+              </div>
             </div>
 
           </div>
 
           <div class="col-md-4 row">
             <div class="col-md-12" id="trucker">
-              <input class="price-by-km" type="number" placeholder="Price by km"/>
+                <div class="input-group" id="trucker">
+                    <span class="input-group-addon">Price by km</span>
+                    <input id="trucker" type="number" class="form-control" >
+                </div>
+             
             </div>
 
             <div class="col-md-12" id="shipper">
-              <input class="distance" type="number" placeholder="Distance in km"/>
+                <div class="input-group" id="shipper">
+                    <span class="input-group-addon">Distance in km</span>
+                    <input id="shipper" type="number" class="form-control" >
+                </div>
+              
             </div>
 
             
@@ -55,22 +70,36 @@
 
           <div class="col-md-4 row" >
             <div class="col-md-12" id="trucker">
-              <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+                <div class="input-group" id="trucker">
+                    <span class="input-group-addon">Price by m3</span>
+                    <input id="trucker" type="number" class="form-control" >
+                </div>
+              
             </div>
              
             <div class="col-md-12"id="shipper">
-              <input class="volume" type="number" placeholder="Volume in m3"/>
-              <input class="option" type="checkbox" placeholder="Deductible option"/>
+                <div class="input-group" id="shipper">
+                    <span class="input-group-addon">Volume in m3</span>
+                    <input id="shipper" type="number" class="form-control" >
+                </div>
+                <div class="input-group" id="shipper">
+                    <span class="input-group-addon">Deductible option</span>
+                    <input id="shipper" type="checkbox" class="option" >
+                </div>
+              
+              
             </div>
           </div>
+        </div>
 
           
-          <div class="row">
-              <button id="compute">Compute</button>
-          </div>
-          
-					<div id="actors" class="row">
-          </div>
+        <div class="row">
+              
+            <button id="compute" type="button" class="btn btn-primary btn-block">Compute</button>
+        </div>
+
+				<div id="actors" class="row">
+        
     </div>
 
 
